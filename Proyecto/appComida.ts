@@ -1,12 +1,11 @@
-import {menu2} from "./Menu";
-
-let inquirer = require('inquirer');
+const inquirer = require('inquirer');
+const comidas=require ('./Menu');
 let fs = require('fs');
 
 //console.log (menuPrincipal);
 inquirer
     .prompt(
-        menu2
+        comidas
     )
     .then(
         (respuesta)=>[

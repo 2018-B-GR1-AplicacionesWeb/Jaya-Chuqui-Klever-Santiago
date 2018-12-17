@@ -1,0 +1,10 @@
+{
+  "name": "comida",
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/node": "^10.12.12",
+    "inquirer": "^6.2.1",
+    "promise": "^8.0.2",
+    "requirer": "0.0.4"
+  }
+}
