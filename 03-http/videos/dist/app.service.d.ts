@@ -1,3 +1,5 @@
+import { Usuario } from "./app.controller";
 export declare class AppService {
-    root(): string;
+    bdd: Usuario[];
+    crearUsuario(usuario: Usuario): Usuario[];
 }

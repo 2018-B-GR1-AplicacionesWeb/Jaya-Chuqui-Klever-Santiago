@@ -1,8 +1,14 @@
 import { Injectable } from '@nestjs/common';
+import {Usuario} from "./app.controller";
 
 @Injectable()
 export class AppService {
-  root(): string {
-    return 'Hello World!';
-  }
+    bdd: Usuario[] = []; //Archivo JASON
+
+
+    crearUsuario(usuario:Usuario){
+        this.bdd.push(usuario);
+        return this.bdd;
+    }
+
 }

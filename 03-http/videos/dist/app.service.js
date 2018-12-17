@@ -8,8 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 let AppService = class AppService {
-    root() {
-        return 'Hello World!';
+    constructor() {
+        this.bdd = [];
+    }
+    crearUsuario(usuario) {
+        this.bdd.push(usuario);
+        return this.bdd;
     }
 };
 AppService = __decorate([
